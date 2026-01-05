@@ -1,0 +1,2360 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: powershell.exe
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: C:\Users\user
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 64
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 32
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 1044
+    content: "\e[?9001h\e[?1004h"
+  - delay: 9211
+    content: "\e[?25l\e[2J\e[m\e[HWindows PowerShell\r\nCopyright (C) Microsoft Corporation. All rights reserved.\e[4;1HInstall the latest PowerShell for new features and improvements! https://aka.ms/PSWindows\e]0;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a\e[?25h"
+  - delay: 23
+    content: "\e[?25l\e[7;1H\e[?25h"
+  - delay: 221
+    content: 'PS C:\Users\user> '
+  - delay: 6185
+    content: "\e[?25l"
+  - delay: 19
+    content: " \e[?25h"
+  - delay: 741
+    content: "\e[?25l"
+  - delay: 10
+    content: "\b \b\e[?25h"
+  - delay: 379
+    content: "\e[?25l"
+  - delay: 16
+    content: "\e[93mt\e[?25h"
+  - delay: 288
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[93m\bte\e[?25h"
+  - delay: 208
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[93m\e[7;19Hter\e[?25h"
+  - delay: 147
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[93m\e[7;19Hterm\e[?25h"
+  - delay: 119
+    content: "\e[m\e[?25l"
+  - delay: 21
+    content: "\e[93m\e[7;19Htermi\e[?25h"
+  - delay: 142
+    content: "\e[m\e[?25l"
+  - delay: 15
+    content: "\e[93m\e[7;19Htermin\e[?25h"
+  - delay: 150
+    content: "\e[m\e[?25l"
+  - delay: 8
+    content: "\e[93m\e[7;19Htermina\e[?25h"
+  - delay: 302
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[93m\e[7;19Hterminal\e[?25h"
+  - delay: 162
+    content: "\e[m\e[?25l"
+  - delay: 8
+    content: "\e[93m\e[7;19Hterminali\e[?25h"
+  - delay: 257
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[93m\e[7;19Hterminaliz\e[?25h"
+  - delay: 211
+    content: "\e[m\e[?25l"
+  - delay: 23
+    content: "\e[93m\e[7;19Hterminalize\e[?25h"
+  - delay: 202
+    content: "\e[m\e[?25l"
+  - delay: 18
+    content: "\e[93m\e[7;19Hterminalizer\e[?25h"
+  - delay: 1844
+    content: "\e[m\e[?25l"
+  - delay: 18
+    content: "\e[93m\e[7;19Hterminalizer \e[?25h"
+  - delay: 3188
+    content: "\e[m\e[?25l"
+  - delay: 19
+    content: "\e[93m\e[7;19Hterminalizer \e[37m-\e[?25h"
+  - delay: 164
+    content: "\e[m\e[?25l"
+  - delay: 7
+    content: "\e[93m\e[7;19Hterminalizer \e[90m--\e[?25h"
+  - delay: 1272
+    content: "\e[m\e[?25l"
+  - delay: 24
+    content: "\e[93m\e[7;19Hterminalizer \e[90m--v\e[?25h"
+  - delay: 139
+    content: "\e[m\e[?25l"
+  - delay: 18
+    content: "\e[93m\e[7;19Hterminalizer \e[90m--ve\e[?25h"
+  - delay: 163
+    content: "\e[m\e[?25l"
+  - delay: 23
+    content: "\e[93m\e[7;19Hterminalizer \e[90m--ver\e[?25h"
+  - delay: 299
+    content: "\e[m\e[?25l"
+  - delay: 18
+    content: "\e[93m\e[7;19Hterminalizer \e[90m--vers\e[?25h"
+  - delay: 132
+    content: "\e[m\e[?25l"
+  - delay: 8
+    content: "\e[93m\e[7;19Hterminalizer \e[90m--versi\e[?25h"
+  - delay: 19
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[93m\e[7;19Hterminalizer \e[90m--versio\e[?25h"
+  - delay: 287
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[93m\e[7;19Hterminalizer \e[90m--version\e[?25h"
+  - delay: 2187
+    content: "\e[m"
+  - delay: 15
+    content: "\r\n"
+  - delay: 122
+    content: "\e[38;5;9mterminalizer : File "
+  - delay: 19
+    content: "\e[m\e[38;5;9m\r\nC:\\Users\\user\\AppData\\Roaming\\npm\\terminalizer.ps1 cannot be \r\nloaded because running scripts is disabled on this system. For \r\nmore information, see about_Execution_Policies at \r\nhttps:/go.microsoft.com/fwlink/?LinkID=135170.\r\nAt line:1 char:1\r\n+ terminalizer --version\r\n+ ~~~~~~~~~~~~\r\n    + CategoryInfo          : SecurityError: (:) [], PSSecurit \r\n   yException\r\n    + FullyQualifiedErrorId : UnauthorizedAccess\e[m\r\nPS C:\\Users\\user> "
+  - delay: 132310
+    content: "\e[?25l"
+  - delay: 11
+    content: "\e[93mw\e[?25h"
+  - delay: 15
+    content: "\e[m\e[93m\bwinget \e[37msearch \e[90m--id \e[37mMicrosoft.PowerShe\e[?25l"
+  - delay: 16
+    content: "\e[m\e[93m\e[19;19Hwinget \e[37msearch \e[90m--id \e[37mMicrosoft.PowerShell\e[?25h"
+  - delay: 1120
+    content: "\e[m"
+  - delay: 16
+    content: "\r\n"
+  - delay: 589
+    content: "\e[?25l"
+  - delay: 114
+    content: "\e]9;4;3;0\e\\"
+  - delay: 16
+    content: "\e[38;2;37;130;146m   - "
+  - delay: 249
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 249
+    content: "\e[m\r\e[K\e[64C\e]9;4;0;0\e\\"
+  - delay: 10
+    content: "\e]9;4;1;40\e\\"
+  - delay: 5
+    content: "\r  \e[38;2;37;130;146m\e[48;2;12;43;48m████████████\e[18X\e[m\e[18C  1024 KB / 2.49 MB"
+  - delay: 23
+    content: "\r  "
+  - delay: 7
+    content: "\e]9;4;1;80\e\\"
+  - delay: 17
+    content: "\e[38;2;37;130;146m\e[48;2;12;43;48m████████████████████████      \e[m  2.00 MB / 2.49 MB"
+  - delay: 19
+    content: "\r  "
+  - delay: 8
+    content: "\e]9;4;1;100\e\\\e[38;2;37;130;146m\e[48;2;12;43;48m██████████████████████████████\e[m  2.49 MB / 2.49 MB"
+  - delay: 827
+    content: "\r\e[K\e[64C"
+  - delay: 8
+    content: "\e]9;4;1;0\e\\"
+  - delay: 12
+    content: "\r  \e[38;2;37;130;146m\e[48;2;12;43;48m\e[30X\e[m\e[30C  0%"
+  - delay: 274
+    content: "\r  "
+  - delay: 7
+    content: "\e]9;4;1;0\e\\"
+  - delay: 18
+    content: "\r  \e[38;2;37;130;146m\e[48;2;12;43;48m▎\e[29X\e[m\e[29C  0%\e]9;4;1;1\e\\"
+  - delay: 10
+    content: "\e[38;2;37;130;146m\e[48;2;12;43;48m\e[20;21H\e[12X\e[m\e[12C  1%"
+  - delay: 29
+    content: "\r  "
+  - delay: 14
+    content: "\e]9;4;1;2\e\\"
+  - delay: 9
+    content: "\r  \e[38;2;37;130;146m\e[48;2;12;43;48m▉\e[29X\e[m\e[29C  2%"
+  - delay: 6
+    content: "\e]9;4;1;3\e\\"
+  - delay: 10
+    content: "\r  \e[38;2;37;130;146m\e[48;2;12;43;48m█▏\e[28X\e[m\e[28C  3%\e]9;4;1;4\e\\"
+  - delay: 13
+    content: "\r  \e[38;2;37;130;146m\e[48;2;12;43;48m█▊\e[15X\e[22C      \e[m  4%\e]9;4;1;6\e\\"
+  - delay: 15
+    content: "\r  \e[38;2;37;130;146m\e[48;2;12;43;48m██▍\e[11X\e[14C\e[13X\e[m\e[13C  6%\e]9;4;1;8\e\\"
+  - delay: 12
+    content: "\r  \e[38;2;37;130;146m\e[48;2;12;43;48m███     \e[6C\e[16X\e[m\e[16C  8%"
+  - delay: 8
+    content: "\e]9;4;1;10\e\\"
+  - delay: 11
+    content: "\r  \e[38;2;37;130;146m\e[48;2;12;43;48m█\e[7C\e[22X\e[m\e[22C  10%"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\e[48;2;12;43;48m\e[20;4H██▌\e[25X\e[25C\e]9;4;1;12\e\\"
+  - delay: 12
+    content: "\e[m\r  \e[38;2;37;130;146m\e[48;2;12;43;48m████▏ \e[23C \e[m  12%"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\e[48;2;12;43;48m\e[20;9H  "
+  - delay: 14
+    content: "\e[m\e[38;2;37;130;146m\e[48;2;12;43;48m  "
+  - delay: 19
+    content: "\e[m\e[38;2;37;130;146m\e[48;2;12;43;48m   "
+  - delay: 10
+    content: "\e[m\e[38;2;37;130;146m\e[48;2;12;43;48m   "
+  - delay: 18
+    content: "\e[m\e[38;2;37;130;146m\e[48;2;12;43;48m  "
+  - delay: 15
+    content: "\e[m\e[38;2;37;130;146m\e[48;2;12;43;48m "
+  - delay: 14
+    content: "\e[m\e[38;2;37;130;146m\e[48;2;12;43;48m   "
+  - delay: 14
+    content: "\e[m\e[38;2;37;130;146m\e[48;2;12;43;48m   "
+  - delay: 21
+    content: "\e[m\e[38;2;37;130;146m\e[48;2;12;43;48m  "
+  - delay: 12
+    content: "\e[m\e[38;2;37;130;146m\e[48;2;12;43;48m  "
+  - delay: 14
+    content: "\e]9;4;1;14\e\\\e[m\e[38;2;37;130;146m\e[48;2;12;43;48m \e[m  14%"
+  - delay: 16
+    content: "\r  \e[38;2;37;130;146m\e[48;2;12;43;48m█"
+  - delay: 17
+    content: "\e[m\e[38;2;37;130;146m\e[48;2;12;43;48m██████"
+  - delay: 18
+    content: "\e[m\e[38;2;37;130;146m\e[48;2;12;43;48m███"
+  - delay: 11
+    content: "\e[m\e[38;2;37;130;146m\e[48;2;12;43;48m▌  "
+  - delay: 27
+    content: "\e[m\e[38;2;37;130;146m\e[48;2;12;43;48m   "
+  - delay: 9
+    content: "\e[m\e[38;2;37;130;146m\e[48;2;12;43;48m "
+  - delay: 12
+    content: "\e[m\e[38;2;37;130;146m\e[48;2;12;43;48m "
+  - delay: 17
+    content: "\e[m\e[38;2;37;130;146m\e[48;2;12;43;48m "
+  - delay: 13
+    content: "\e[m\e[38;2;37;130;146m\e[48;2;12;43;48m   "
+  - delay: 17
+    content: "\e[m\e[38;2;37;130;146m\e[48;2;12;43;48m  "
+  - delay: 20
+    content: "\e[m\e[38;2;37;130;146m\e[48;2;12;43;48m  "
+  - delay: 8
+    content: "\e[m\e[38;2;37;130;146m\e[48;2;12;43;48m   "
+  - delay: 5
+    content: "\e]9;4;1;35\e\\"
+  - delay: 11
+    content: "\e[m\r  \e[38;2;37;130;146m\e[48;2;12;43;48m\e[29C \e[m  35%"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\e[48;2;12;43;48m\e[20;3H█████████"
+  - delay: 16
+    content: "\e[m\e[38;2;37;130;146m\e[48;2;12;43;48m███████"
+  - delay: 18
+    content: "\e[m\e[38;2;37;130;146m\e[48;2;12;43;48m▊    "
+  - delay: 15
+    content: "\e[m\e[38;2;37;130;146m\e[48;2;12;43;48m\e[9X\e[m\e[9C  56%\e]9;4;1;56\e\\"
+  - delay: 11
+    content: "\r  \e[38;2;37;130;146m\e[48;2;12;43;48m█"
+  - delay: 16
+    content: "\e[m\e[38;2;37;130;146m\e[48;2;12;43;48m████████████"
+  - delay: 8
+    content: "\e]9;4;1;68\e\\"
+  - delay: 7
+    content: "\e[m\e[38;2;37;130;146m\e[48;2;12;43;48m███████▍\e[9X\e[m\e[9C  68%"
+  - delay: 205
+    content: "\r  "
+  - delay: 11
+    content: "\e]9;4;1;79\e\\\e[38;2;37;130;146m\e[48;2;12;43;48m███████████████████████▋      \e[m  79%"
+  - delay: 133
+    content: "\r  "
+  - delay: 12
+    content: "\e]9;4;1;90\e\\"
+  - delay: 11
+    content: "\e[38;2;37;130;146m\e[48;2;12;43;48m███████████████████████████   \e[m  90%"
+  - delay: 273
+    content: "\r  "
+  - delay: 9
+    content: "\e]9;4;1;90\e\\\e[38;2;37;130;146m\e[48;2;12;43;48m███████████████████████████   \e[m  90%"
+  - delay: 221
+    content: "\r  "
+  - delay: 14
+    content: "\e[38;2;37;130;146m\e[48;2;12;43;48m████████████████████████████\e]9;4;1;100\e\\"
+  - delay: 13
+    content: "\e[m\e[38;2;37;130;146m\e[48;2;12;43;48m██\e[m  100%"
+  - delay: 218
+    content: "\r\e[K\e[64C\e]9;4;0;0\e\\"
+  - delay: 16
+    content: "\r\e[?25h"
+  - delay: 35
+    content: "\e[1mThe `msstore` source requires that you view the following agreements before using."
+  - delay: 12
+    content: "\e[?25l\e[22m\e[1m\r\nTerms of Transaction\e[22m: https://aka.ms/microsoft-store-terms-of-transaction\r\nThe source requires the current machine's 2-letter geographic region to be sent to the backend service to function properly (ex. \"US\").\e[28;1HDo you agree to all the source agreements terms?\e[1m\r\n[Y] Yes\e[22m  \e[1m[N] No: \e[?25h"
+  - delay: 9963
+    content: "\e[22m\e[1my"
+  - delay: 2607
+    content: "\e[22m\r\n"
+  - delay: 237
+    content: "Name               Id                           Version Source\r\n---------------------------------------------------------------\r\nPowerShell         Microsoft.PowerShell         7.5.4.0 winget\r\nPowerShell Preview Microsoft.PowerShell.Preview 7.6.0.6 winget  \r"
+  - delay: 19
+    content: |+
+
+  - delay: 30
+    content: 'PS C:\Users\user> '
+  - delay: 19419
+    content: "\e[?25l"
+  - delay: 15
+    content: "\e[93mwinget \e[37minstall \e[90m--id \e[37mMicrosoft.PowerShell \e[90m--sou"
+  - delay: 9
+    content: "\e[m\r\n\e[93m\e[31;19Hwinget \e[37minstall \e[90m--id \e[37mMicrosoft.PowerShell \e[90m--source \e[37mwing\e[K\e[56C"
+  - delay: 15
+    content: "\e[m\e[93m\e[31;19Hwinget \e[37minstall \e[90m--id \e[37mMicrosoft.PowerShell \e[90m--source \e[37mwinget\e[?25h"
+  - delay: 865
+    content: "\e[m"
+  - delay: 10
+    content: "\r\n"
+  - delay: 322
+    content: "\e[?25l"
+  - delay: 101
+    content: "\e]9;4;3;0\e\\"
+  - delay: 15
+    content: "\e[38;2;37;130;146m   - "
+  - delay: 249
+    content: "\e[m\r\e[K\e[64C\e]9;4;0;0\e\\"
+  - delay: 110
+    content: "\e]9;4;3;0\e\\"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 249
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 236
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 248
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 249
+    content: "\e[m\r\e[K\e[64C\e]9;4;0;0\e\\"
+  - delay: 15
+    content: "\r\e[?25h"
+  - delay: 445
+    content: "Found \e[96mPowerShell \e[m[\e[96mMicrosoft.PowerShell\e[m] Version 7.5.4.0\r\nThis application is licensed to you by its owner.\r\nMicrosoft is not responsible for, nor does it grant any licenses\r\n\e[31;64Hs to, third-party packages.\r"
+  - delay: 17
+    content: |+
+
+  - delay: 29
+    content: "Downloading \e[94mhttps://github.com/PowerShell/PowerShell/releases/do\e[m\r\n\e[94m\e[31;64Hownload/v7.5.4/PowerShell-7.5.4-win-x64.msi\r"
+  - delay: 18
+    content: "\e[m\n\e[94m\e[?25l\e[64C"
+  - delay: 93
+    content: "\e]9;4;3;0\e\\\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 248
+    content: "\e[m\e[38;2;37;130;146m\r   "
+  - delay: 15
+    content: "\e[m\e[38;2;37;130;146m\\ "
+  - delay: 249
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 250
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 247
+    content: "\e[m"
+  - delay: 14
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 250
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 236
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 247
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 250
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 249
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 247
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 247
+    content: "\e[m\r\e[K\e[64C\e]9;4;0;0\e\\"
+  - delay: 9
+    content: "\e]9;4;1;0\e\\"
+  - delay: 6
+    content: "\r  \e[38;2;37;130;146m\e[48;2;12;43;48m▎\e[29X\e[m\e[29C  1024 KB /  107 MB"
+  - delay: 843
+    content: "\r  "
+  - delay: 8
+    content: "\e]9;4;1;10\e\\"
+  - delay: 11
+    content: "\e[38;2;37;130;146m\e[48;2;12;43;48m███\e[27X\e[m\e[27C  11.0 MB /  107 MB"
+  - delay: 982
+    content: "\r  "
+  - delay: 9
+    content: "\e]9;4;1;18\e\\\e[38;2;37;130;146m\e[48;2;12;43;48m█████▌\e[24X\e[m\e[24C  20.0 MB /  107 MB"
+  - delay: 1013
+    content: "\r  "
+  - delay: 7
+    content: "\e]9;4;1;25\e\\"
+  - delay: 9
+    content: "\e[38;2;37;130;146m\e[48;2;12;43;48m███████▊\e[22X\e[m\e[22C  28.0 MB /  107 MB"
+  - delay: 996
+    content: "\r  "
+  - delay: 12
+    content: "\e]9;4;1;32\e\\\e[38;2;37;130;146m\e[48;2;12;43;48m█████████▋\e[20X\e[m\e[20C  35.0 MB /  107 MB"
+  - delay: 1158
+    content: "\r  "
+  - delay: 12
+    content: "\e]9;4;1;42\e\\"
+  - delay: 7
+    content: "\e[38;2;37;130;146m\e[48;2;12;43;48m████████████▊\e[17X\e[m\e[17C  45.9 MB /  107 MB"
+  - delay: 1174
+    content: "\r  "
+  - delay: 8
+    content: "\e]9;4;1;50\e\\"
+  - delay: 6
+    content: "\e[38;2;37;130;146m\e[48;2;12;43;48m███████████████▎\e[14X\e[m\e[14C  54.9 MB /  107 MB"
+  - delay: 1123
+    content: "\r  "
+  - delay: 9
+    content: "\e]9;4;1;56\e\\"
+  - delay: 11
+    content: "\e[38;2;37;130;146m\e[48;2;12;43;48m████████████████▉\e[13X\e[m\e[13C  60.9 MB /  107 MB"
+  - delay: 1009
+    content: "\r  "
+  - delay: 10
+    content: "\e[38;2;37;130;146m\e[48;2;12;43;48m███████████████████▏      \e]9;4;1;63\e\\"
+  - delay: 12
+    content: "\e[m\e[38;2;37;130;146m\e[48;2;12;43;48m    \e[m  68.9 MB /  107 MB"
+  - delay: 1103
+    content: "\r  "
+  - delay: 9
+    content: "\e[38;2;37;130;146m\e[48;2;12;43;48m█████████████████████       \e]9;4;1;70\e\\"
+  - delay: 13
+    content: "\e[m\e[38;2;37;130;146m\e[48;2;12;43;48m  \e[m  75.9 MB /  107 MB"
+  - delay: 1034
+    content: "\r  "
+  - delay: 9
+    content: "\e]9;4;1;78\e\\"
+  - delay: 8
+    content: "\e[38;2;37;130;146m\e[48;2;12;43;48m███████████████████████▌      \e[m  84.9 MB /  107 MB"
+  - delay: 1002
+    content: "\r  "
+  - delay: 11
+    content: "\e]9;4;1;87\e\\\e[38;2;37;130;146m\e[48;2;12;43;48m██████████████████████████    \e[m  93.9 MB /  107 MB"
+  - delay: 1542
+    content: "\r  "
+  - delay: 9
+    content: "\e]9;4;1;95\e\\"
+  - delay: 11
+    content: "\e[38;2;37;130;146m\e[48;2;12;43;48m████████████████████████████▌ \e[m   102 MB /  107 MB"
+  - delay: 336
+    content: "\r  "
+  - delay: 10
+    content: "\e]9;4;1;100\e\\"
+  - delay: 11
+    content: "\e[38;2;37;130;146m\e[48;2;12;43;48m██████████████████████████████\e[m   107 MB /  107 MB"
+  - delay: 873
+    content: "\r\n\e[64C\e]9;4;0;0\e\\\rSuccessfully verified installer hash\r\e[?25h"
+  - delay: 11
+    content: |+
+
+  - delay: 114
+    content: "\e[?25l"
+  - delay: 105
+    content: "\e[?25h"
+  - delay: 16
+    content: "Starting package install...\r"
+  - delay: 14
+    content: "\n\e[?25l\e[64C"
+  - delay: 95
+    content: "\e]9;4;3;0\e\\"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 250
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 239
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 239
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 237
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 238
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 238
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 239
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 237
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 238
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 236
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 236
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 238
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 237
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 250
+    content: "\e[m"
+  - delay: 17
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 249
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 250
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 235
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 249
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 250
+    content: "\e[m"
+  - delay: 14
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 247
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 239
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 251
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 251
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 250
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 247
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 236
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 236
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 250
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 248
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 249
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 249
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 236
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 236
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 250
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 235
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 249
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 250
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 248
+    content: "\e[m"
+  - delay: 14
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 250
+    content: "\e[m\e[38;2;37;130;146m\r   "
+  - delay: 15
+    content: "\e[m\e[38;2;37;130;146m/ "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 251
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 248
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 251
+    content: "\e[m"
+  - delay: 14
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 251
+    content: "\e[m"
+  - delay: 14
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 247
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 250
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 249
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 236
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 249
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 237
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 236
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 235
+    content: "\e[m"
+  - delay: 17
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 234
+    content: "\e[m"
+  - delay: 17
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 235
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 236
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 235
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 249
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 237
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 252
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 251
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 252
+    content: "\e[m"
+  - delay: 14
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 249
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 252
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 252
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 251
+    content: "\e[m"
+  - delay: 14
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 252
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 252
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 252
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 253
+    content: "\e[m"
+  - delay: 14
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 252
+    content: "\e[m"
+  - delay: 14
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 252
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 250
+    content: "\e[m"
+  - delay: 14
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 248
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 236
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 236
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 236
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 249
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 236
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 251
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 237
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 249
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 249
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 237
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 248
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 250
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 249
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 249
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 236
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 235
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 251
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 237
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 250
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 250
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 247
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 237
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 248
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 251
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 251
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 249
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 236
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 247
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 251
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 247
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 251
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 249
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 248
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 250
+    content: "\e[m"
+  - delay: 14
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 251
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 249
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 250
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 236
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 264
+    content: "\e[m"
+  - delay: 10
+    content: "\e[38;2;37;130;146m\r   "
+  - delay: 18
+    content: "\e[m\e[38;2;37;130;146m- "
+  - delay: 244
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 259
+    content: "\e[m"
+  - delay: 21
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 253
+    content: "\e[m"
+  - delay: 20
+    content: "\e[38;2;37;130;146m\r   /"
+  - delay: 10
+    content: "\e[m "
+  - delay: 250
+    content: "\r\e[K\e[64C\e]9;4;0;0\e\\\rSuccessfully installed\r\e[?25h"
+  - delay: 9
+    content: |+
+
+  - delay: 406
+    content: 'PS C:\Users\user> '
+  - delay: 14118
+    content: "\e[?25l"
+  - delay: 15
+    content: "\e[93mwi\e[?25h\e[?25l\e[m\e[93m\e[32;19Hwinget \e[37minstall \e[90m--id \e[37mMicrosoft.PowerShell.Previ"
+  - delay: 11
+    content: "\e[m\r\n\e[93m\e[31;19Hwinget \e[37minstall \e[90m--id \e[37mMicrosoft.PowerShell.Preview \e[90m--source \e[37mwi\e[K\e[?25h"
+  - delay: 15
+    content: "\e[?25l\e[m\e[93m\e[31;19Hwinget \e[37minstall \e[90m--id \e[37mMicrosoft.PowerShell.Preview \e[90m--source \e[37mwinget\e[?25h"
+  - delay: 927
+    content: "\e[m"
+  - delay: 17
+    content: "\r\n"
+  - delay: 309
+    content: "\e[?25l"
+  - delay: 101
+    content: "\e]9;4;3;0\e\\"
+  - delay: 16
+    content: "\e[38;2;37;130;146m   - "
+  - delay: 251
+    content: "\e[m\r\e[K\e[64C\e]9;4;0;0\e\\"
+  - delay: 109
+    content: "\e]9;4;3;0\e\\"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 250
+    content: "\e[m"
+  - delay: 14
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 251
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 250
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 237
+    content: "\e[m\r\e[K\e[64C\e]9;4;0;0\e\\"
+  - delay: 15
+    content: "\r\e[?25h"
+  - delay: 373
+    content: "Found \e[96mPowerShell Preview \e[m[\e[96mMicrosoft.PowerShell.Preview\e[m] Version \r\n\e[31;64H 7.6.0.6\r\nThis application is licensed to you by its owner.\r\nMicrosoft is not responsible for, nor does it grant any licenses\r\n\e[31;64Hs to, third-party packages.\r"
+  - delay: 15
+    content: |+
+
+  - delay: 24
+    content: "Downloading \e[94mhttps://github.com/PowerShell/PowerShell/releases/do\e[m\r\n\e[94m\e[31;64Hownload/v7.6.0-preview.6/PowerShell-7.6.0-preview.6-win-x64.msi  \r"
+  - delay: 22
+    content: "\e[m\n\e[94m\e[?25l\e[64C"
+  - delay: 93
+    content: "\e]9;4;3;0\e\\\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 249
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 249
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 250
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 246
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 244
+    content: "\e[m\r\e[K\e[64C\e]9;4;0;0\e\\"
+  - delay: 10
+    content: "\e]9;4;1;0\e\\"
+  - delay: 5
+    content: "\r  \e[38;2;37;130;146m\e[48;2;12;43;48m▎\e[29X\e[m\e[29C  1024 KB /  109 MB"
+  - delay: 983
+    content: "\r  "
+  - delay: 8
+    content: "\e]9;4;1;10\e\\\e[38;2;37;130;146m\e[48;2;12;43;48m███\e[27X\e[m\e[27C  11.0 MB /  109 MB"
+  - delay: 1170
+    content: "\r  "
+  - delay: 9
+    content: "\e]9;4;1;18\e\\"
+  - delay: 13
+    content: "\e[38;2;37;130;146m\e[48;2;12;43;48m█████▍\e[24X\e[m\e[24C  20.0 MB /  109 MB"
+  - delay: 987
+    content: "\r  "
+  - delay: 8
+    content: "\e]9;4;1;25\e\\\e[38;2;37;130;146m\e[48;2;12;43;48m███████▋\e[22X\e[m\e[22C  28.0 MB /  109 MB"
+  - delay: 1147
+    content: "\r  "
+  - delay: 8
+    content: "\e]9;4;1;32\e\\"
+  - delay: 7
+    content: "\e[38;2;37;130;146m\e[48;2;12;43;48m█████████▊\e[20X\e[m\e[20C  36.0 MB /  109 MB"
+  - delay: 1007
+    content: "\r  "
+  - delay: 7
+    content: "\e]9;4;1;40\e\\"
+  - delay: 7
+    content: "\e[38;2;37;130;146m\e[48;2;12;43;48m████████████\e[18X\e[m\e[18C  44.0 MB /  109 MB"
+  - delay: 1135
+    content: "\r  "
+  - delay: 8
+    content: "\e]9;4;1;44\e\\"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\e[48;2;12;43;48m█████████████▎\e[16X\e[m\e[16C  48.9 MB /  109 MB"
+  - delay: 1135
+    content: "\r  "
+  - delay: 9
+    content: "\e[38;2;37;130;146m\e[48;2;12;43;48m███████████████▌        \e]9;4;1;51\e\\"
+  - delay: 12
+    content: "\e[m\e[38;2;37;130;146m\e[48;2;12;43;48m      \e[m  56.9 MB /  109 MB"
+  - delay: 1052
+    content: "\r  "
+  - delay: 11
+    content: "\e]9;4;1;59\e\\"
+  - delay: 6
+    content: "\e[38;2;37;130;146m\e[48;2;12;43;48m█████████████████▋\e[12X\e[m\e[12C  64.9 MB /  109 MB"
+  - delay: 1032
+    content: "\r  "
+  - delay: 10
+    content: "\e]9;4;1;67\e\\\e[38;2;37;130;146m\e[48;2;12;43;48m████████████████████▏\e[9X\e[m\e[9C  73.9 MB /  109 MB"
+  - delay: 1168
+    content: "\r  "
+  - delay: 9
+    content: "\e]9;4;1;75\e\\"
+  - delay: 11
+    content: "\e[38;2;37;130;146m\e[48;2;12;43;48m██████████████████████▋       \e[m  82.9 MB /  109 MB"
+  - delay: 1061
+    content: "\r  "
+  - delay: 11
+    content: "\e]9;4;1;82\e\\"
+  - delay: 9
+    content: "\e[38;2;37;130;146m\e[48;2;12;43;48m████████████████████████▊     \e[m  90.9 MB /  109 MB"
+  - delay: 1048
+    content: "\r  "
+  - delay: 9
+    content: "\e]9;4;1;91\e\\"
+  - delay: 14
+    content: "\e[38;2;37;130;146m\e[48;2;12;43;48m███████████████████████████▌  \e[m   100 MB /  109 MB"
+  - delay: 1014
+    content: "\r  "
+  - delay: 10
+    content: "\e]9;4;1;99\e\\"
+  - delay: 7
+    content: "\e[38;2;37;130;146m\e[48;2;12;43;48m█████████████████████████████▋\e[m   108 MB /  109 MB"
+  - delay: 119
+    content: "\r  "
+  - delay: 9
+    content: "\e]9;4;1;100\e\\"
+  - delay: 13
+    content: "\e[38;2;37;130;146m\e[48;2;12;43;48m██████████████████████████████\e[m   109 MB /  109 MB"
+  - delay: 615
+    content: "\r\n\e[64C\e]9;4;0;0\e\\\rSuccessfully verified installer hash\r\e[?25h"
+  - delay: 10
+    content: |+
+
+  - delay: 87
+    content: "\e[?25l"
+  - delay: 115
+    content: "\e[?25h"
+  - delay: 17
+    content: "Starting package install...\r"
+  - delay: 14
+    content: "\n\e[?25l\e[64C"
+  - delay: 95
+    content: "\e]9;4;3;0\e\\"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 250
+    content: "\e[m\e[38;2;37;130;146m\r   "
+  - delay: 15
+    content: "\e[m\e[38;2;37;130;146m\\ "
+  - delay: 236
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 237
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 238
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 236
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 250
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 251
+    content: "\e[m"
+  - delay: 14
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 252
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 236
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 252
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 237
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 237
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 236
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 237
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 238
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 251
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 251
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 237
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 249
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 248
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 248
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 237
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 249
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 249
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 249
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 249
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 250
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 235
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 239
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 250
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 235
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 250
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 237
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 250
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 249
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 250
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 247
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 249
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 249
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 249
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 237
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 238
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 235
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 238
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 250
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 236
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 238
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 238
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 237
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 250
+    content: "\e[m"
+  - delay: 14
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 239
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 239
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 249
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 237
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 251
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 235
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 251
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 249
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 248
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 248
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 237
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 250
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 250
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 249
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 237
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 249
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 249
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 252
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 248
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 249
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 251
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 251
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 251
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 251
+    content: "\e[m"
+  - delay: 14
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 251
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 236
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 252
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 238
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 251
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 251
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 251
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 250
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 248
+    content: "\e[m"
+  - delay: 14
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 251
+    content: "\e[m"
+  - delay: 14
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 250
+    content: "\e[m\e[38;2;37;130;146m\r   "
+  - delay: 15
+    content: "\e[m\e[38;2;37;130;146m\\ "
+  - delay: 252
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 252
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 251
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 252
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 253
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 248
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 237
+    content: "\e[m"
+  - delay: 14
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 253
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 251
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 250
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 249
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 251
+    content: "\e[m"
+  - delay: 14
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 251
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 253
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 251
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 252
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 237
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 250
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 236
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 251
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 238
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 237
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 249
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 251
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 252
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 251
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 237
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 238
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 238
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 237
+    content: "\e[m"
+  - delay: 14
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 251
+    content: "\e[m"
+  - delay: 14
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 251
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 236
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 249
+    content: "\e[m"
+  - delay: 14
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 250
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 250
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 250
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 249
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 237
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 236
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 248
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 249
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 249
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 237
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 250
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 236
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 236
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 246
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 250
+    content: "\e[m"
+  - delay: 14
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 251
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 248
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 236
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 237
+    content: "\e[m"
+  - delay: 14
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 237
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 247
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 236
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 236
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 251
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 249
+    content: "\e[m"
+  - delay: 14
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 236
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 236
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 248
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 236
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 235
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 250
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 236
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 249
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 249
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 236
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 238
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 249
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 236
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 249
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 249
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 251
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 249
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 237
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 237
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 238
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 250
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 251
+    content: "\e[m"
+  - delay: 16
+    content: "\e[38;2;37;130;146m\r   / "
+  - delay: 238
+    content: "\e[m"
+  - delay: 15
+    content: "\e[38;2;37;130;146m\r   - "
+  - delay: 251
+    content: "\e[m"
+  - delay: 14
+    content: "\e[38;2;37;130;146m\r   \\ "
+  - delay: 257
+    content: "\e[m"
+  - delay: 17
+    content: "\e[38;2;37;130;146m\r   | "
+  - delay: 246
+    content: "\e[m\r\e[K\e[64C\e]9;4;0;0\e\\\rSuccessfully installed\r\e[?25h"
+  - delay: 11
+    content: |+
+
+  - delay: 312
+    content: 'PS C:\Users\user> '
+  - delay: 34488
+    content: "\e[?25l"
+  - delay: 19
+    content: "\e[93mt\e[?25h"
+  - delay: 137
+    content: "\e[m\e[?25l"
+  - delay: 20
+    content: "\e[93m\bte\e[?25h"
+  - delay: 186
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[93m\e[32;19Hter\e[?25h"
+  - delay: 97
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[93m\e[32;19Hterm\e[?25h"
+  - delay: 92
+    content: "\e[m\e[?25l"
+  - delay: 19
+    content: "\e[93m\e[32;19Htermi\e[?25h"
+  - delay: 122
+    content: "\e[m\e[?25l"
+  - delay: 20
+    content: "\e[93m\e[32;19Htermin\e[?25h"
+  - delay: 144
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[32;19Htermina\e[?25h"
+  - delay: 140
+    content: "\e[m\e[?25l"
+  - delay: 16
+    content: "\e[93m\e[32;19Hterminal\e[?25h"
+  - delay: 157
+    content: "\e[m\e[?25l"
+  - delay: 15
+    content: "\e[93m\e[32;19Hterminaloi\e[?25h"
+  - delay: 974
+    content: "\e[m\e[?25l"
+  - delay: 22
+    content: "\e[93m\e[32;19Hterminalo \b\e[?25h"
+  - delay: 134
+    content: "\e[m\e[?25l"
+  - delay: 21
+    content: "\e[93m\e[32;19Hterminal \b\e[?25h"
+  - delay: 504
+    content: "\e[m\e[?25l"
+  - delay: 15
+    content: "\e[93m\e[32;19Hterminali\e[?25h"
+  - delay: 208
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[93m\e[32;19Hterminaliz\e[?25h"
+  - delay: 31167
+    content: "\e[m\e[?25l"
+  - delay: 23
+    content: "\e[93m\e[32;19Hterminalize\e[?25h"
+  - delay: 194
+    content: "\e[m\e[?25l"
+  - delay: 9
+    content: "\e[93m\e[32;19Hterminalizer\e[?25h"
+  - delay: 6050
+    content: "\e[m\e[?25l"
+  - delay: 18
+    content: "\e[93m\e[32;19Hterminalizer \e[?25h"
+  - delay: 3351
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[32;19Hterminalizer \e[37m-\e[?25h"
+  - delay: 173
+    content: "\e[m\e[?25l"
+  - delay: 15
+    content: "\e[93m\e[32;19Hterminalizer \e[90m--\e[?25h"
+  - delay: 654
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[32;19Hterminalizer \e[90m--v\e[?25h"
+  - delay: 140
+    content: "\e[m\e[?25l"
+  - delay: 19
+    content: "\e[93m\e[32;19Hterminalizer \e[90m--ve\e[?25h"
+  - delay: 164
+    content: "\e[m\e[?25l"
+  - delay: 21
+    content: "\e[93m\e[32;19Hterminalizer \e[90m--ver\e[?25h"
+  - delay: 284
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[32;19Hterminalizer \e[90m--vers\e[?25h"
+  - delay: 110
+    content: "\e[m\e[?25l"
+  - delay: 16
+    content: "\e[93m\e[32;19Hterminalizer \e[90m--versi\e[?25h"
+  - delay: 35
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[93m\e[32;19Hterminalizer \e[90m--versio\e[?25h"
+  - delay: 269
+    content: "\e[m\e[?25l"
+  - delay: 8
+    content: "\e[93m\e[32;19Hterminalizer \e[90m--version\e[?25h"
+  - delay: 664
+    content: "\e[m"
+  - delay: 10
+    content: "\r\n"
+  - delay: 33
+    content: "\e[38;5;9mterminalizer : File \e[m\e[?25l\r\n\e[38;5;9mC:\\Users\\user\\AppData\\Roaming\\npm\\terminalizer.ps1 cannot be    \e[32;62H\e[?25h\e[m\r\n\e[38;5;9mloaded because running scripts is disabled on this system. For  \b\e[m\r\n\e[38;5;9mmore information, see about_Execution_Policies at\e[1C\e[m\r\n\e[38;5;9mhttps:/go.microsoft.com/fwlink/?LinkID=135170.\e[m\r\n\e[38;5;9mAt line:1 char:1\e[m\r\n\e[38;5;9m+ terminalizer --version\e[m\r\n\e[38;5;9m+ ~~~~~~~~~~~~\e[m\r\n\e[38;5;9m    + CategoryInfo          : SecurityError: (:) [], PSSecurit  \b\e[m\r\n\e[38;5;9m   yException\e[m\r\n\e[38;5;9m    + FullyQualifiedErrorId : UnauthorizedAccess\e[m\r\nPS C:\\Users\\user>\e[1C"
+  - delay: 2075
+    content: "\e[?25l"
+  - delay: 18
+    content: "\e[93mt\e[?25h"
+  - delay: 144
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[93m\bte\e[?25h"
+  - delay: 198
+    content: "\e[m\e[?25l"
+  - delay: 9
+    content: "\e[93m\e[32;19Hter\e[?25h"
+  - delay: 158
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[32;19Hterm\e[?25h"
+  - delay: 154
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[93m\e[32;19Htermi\e[?25h"
+  - delay: 355
+    content: "\e[m\e[?25l"
+  - delay: 8
+    content: "\e[93m\e[32;19Htermin\e[?25h"
+  - delay: 224
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[32;19Htermina\e[?25h"
+  - delay: 165
+    content: "\e[m\e[?25l"
+  - delay: 23
+    content: "\e[93m\e[32;19Hterminal\e[?25h"
+  - delay: 167
+    content: "\e[m\e[?25l"
+  - delay: 21
+    content: "\e[93m\e[32;19Hterminali\e[?25h"
+  - delay: 180
+    content: "\e[m\e[?25l"
+  - delay: 22
+    content: "\e[93m\e[32;19Hterminaliz\e[?25h"
+  - delay: 219
+    content: "\e[m\e[?25l"
+  - delay: 15
+    content: "\e[93m\e[32;19Hterminalize\e[?25h"
+  - delay: 236
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[93m\e[32;19Hterminalizer\e[?25h"
+  - delay: 520
+    content: "\e[m\e[?25l"
+  - delay: 16
+    content: "\e[93m\e[32;19Hterminalizer \e[?25h"
+  - delay: 1957
+    content: "\e[m\e[?25l"
+  - delay: 19
+    content: "\e[93m\e[32;19Hterminalizer \e[37mr\e[?25h"
+  - delay: 169
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[93m\e[32;19Hterminalizer \e[37mre\e[?25h"
+  - delay: 262
+    content: "\e[m\e[?25l"
+  - delay: 18
+    content: "\e[93m\e[32;19Hterminalizer \e[37mrec\e[?25h"
+  - delay: 161
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[93m\e[32;19Hterminalizer \e[37mreco\e[?25h"
+  - delay: 116
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[32;19Hterminalizer \e[37mrecor\e[?25h"
+  - delay: 173
+    content: "\e[m\e[?25l"
+  - delay: 15
+    content: "\e[93m\e[32;19Hterminalizer \e[37mrecord\e[?25h"
+  - delay: 202
+    content: "\e[m\e[?25l"
+  - delay: 16
+    content: "\e[93m\e[32;19Hterminalizer \e[37mrecord \e[?25h"
+  - delay: 436
+    content: "\e[m\e[?25l"
+  - delay: 20
+    content: "\e[93m\e[32;19Hterminalizer \e[37mrecord s\e[?25h"
+  - delay: 140
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[93m\e[32;19Hterminalizer \e[37mrecord si\e[?25h"
+  - delay: 148
+    content: "\e[m\e[?25l"
+  - delay: 9
+    content: "\e[93m\e[32;19Hterminalizer \e[37mrecord sil\e[?25h"
+  - delay: 2616
+    content: "\e[m"
+  - delay: 19
+    content: "\r\n"
+  - delay: 11
+    content: "\e[38;5;9mterminalizer : File \e[?25l\e[m\r\n\e[38;5;9mC:\\Users\\user\\AppData\\Roaming\\npm\\terminalizer.ps1 cannot be    \e[32;62H\e[?25h\e[m\r\n\e[38;5;9mloaded because running scripts is disabled on this system. For  \b\e[m\r\n\e[38;5;9mmore information, see about_Execution_Policies at\e[1C\e[m\r\n\e[38;5;9mhttps:/go.microsoft.com/fwlink/?LinkID=135170.\e[m\r\n\e[38;5;9mAt line:1 char:1\e[m\r\n\e[38;5;9m+ terminalizer record sil\e[m\r\n\e[38;5;9m+ ~~~~~~~~~~~~\e[m\r\n\e[38;5;9m    + CategoryInfo          : SecurityError: (:) [], PSSecurit  \b\e[m\r\n\e[38;5;9m   yException\e[m\r\n\e[38;5;9m    + FullyQualifiedErrorId : UnauthorizedAccess"
+  - delay: 15
+    content: "\e[m\r\nPS C:\\Users\\user>\e[1C"
+  - delay: 16758
+    content: "\e[?25l"
+  - delay: 18
+    content: "\e[93me\e[?25h"
+  - delay: 487
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[93m\bex\e[?25h"
+  - delay: 228
+    content: "\e[m\e[?25l"
+  - delay: 24
+    content: "\e[93m\e[32;19Hexi\e[?25h"
+  - delay: 272
+    content: "\e[m\e[?25l"
+  - delay: 23
+    content: "\e[92m\e[32;19Hexit\e[?25h"
+  - delay: 725
+    content: "\e[m"
+  - delay: 10
+    content: "\r\n"
